@@ -18,3 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
 function loadPage() {
     preloader.classList.add('preloader--hide')
 }
+let posTop = window.pageYOffset;
+document.addEventListener('scroll', function() {
+    console.log(posTop)
+});
+
+function scrollWin() {
+    //document.location.href = "http://www.site.ru"
+    console.log('scroll')
+    window.scrollTo(0, 800);
+}

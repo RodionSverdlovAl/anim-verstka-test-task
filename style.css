@@ -1,15 +1,69 @@
 * {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 body {
     font-size: 16px;
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    position: relative;
+}
+.hole {
+    position: relative;
+    top: 0vh;
+    left: -30vw;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 0 100vw rgba(255, 255, 255, 0.8);
+    animation: spin 5s linear 0s infinite;
+}
+.hole._active{
+    transform: translate(150%, 0px);
+    left: 30vw;
+    transition: all 1.8s ease 0s;
+}
+button{
+    position: absolute;
+    margin-left: -250px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: teal;
+    color:white;
+    font-size: 24px;
 }
 
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
 img {
-    width: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover
 }
 
 .preloader {
