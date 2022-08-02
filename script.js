@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const loadPage = () => {
  preloader.classList.add('preloader--hide')
+ const whiteBoard = document.getElementById('white-board');
+ whiteBoard.classList.remove('_active')
 }
 
 
@@ -44,7 +46,7 @@ function onWheel(e) {
   }else{
     hole.classList.remove('_active')
   }
-  
+
   e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 }
 
