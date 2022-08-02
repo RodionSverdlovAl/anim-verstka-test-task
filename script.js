@@ -36,6 +36,9 @@ if (document.addEventListener) {
   document.attachEvent("onmousewheel", onWheel);
 }
 
+const down = () =>{
+    hole.classList.add('_active')
+}
 function onWheel(e) {
   e = e || window.event;
   var delta = e.deltaY || e.detail || e.wheelDelta;
