@@ -17,12 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const loadPage = () => {
  preloader.classList.add('preloader--hide')
- const whiteBoard = document.getElementById('white-board');
- 
 }
-
-
-
 
 if (document.addEventListener) {
   if ('onwheel' in document) {
