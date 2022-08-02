@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const loadPage = () => {
  preloader.classList.add('preloader--hide')
  const whiteBoard = document.getElementById('white-board');
- whiteBoard.classList.remove('_active')
+ 
 }
+
+
 
 
 if (document.addEventListener) {
@@ -57,5 +59,6 @@ move_button.addEventListener('click', function(){
     whiteBoard.classList.add('_active')
     setTimeout(()=>{
         location.href = 'newPage.html';
+        whiteBoard.classList.remove('_active')
     },1000)
 })
