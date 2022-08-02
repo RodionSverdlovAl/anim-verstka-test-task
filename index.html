@@ -21,21 +21,23 @@
   </div>
     
   <div class="container">
+    
       <section>
         <img src="https://cs7.pikabu.ru/post_img/big/2017/12/27/6/1514366899147280970.jpg" alt="background image">
-        <div class="hole"></div>
-        <p><a href="#down"><button>Down</button></a></p>
+        <!-- <div class="hole"></div> -->
+        <p id="down" onclick="down()"><a href="#down"><button>Down</button></a></p>
+        <div class="scroll_board"></div>
       </section>
       <section>
         <p><a name="down"></a></p>
         <img src="https://krot.info/uploads/posts/2020-10/1603957747_5-p-spokoinii-fon-dlya-rabochego-stola-8.jpg" alt="background image">
-        <div id="hole" class="hole"></div>
-        <button id="move_button">move to next page</button>
+        <button id="move_button">move to next page</button> <div class="scroll_board"></div>
         <div class="white-board" id="white-board"></div>
       </section>
       <section style="display: none;">
         <img src="https://img1.goodfon.ru/wallpaper/nbig/4/c6/more-bali-zakat-lyudi-oblaka.jpg" alt="background image">
       </section>
+      <div id="hole" class="hole"></div>
   </div>
   <script src="script.js"></script>
 </body>

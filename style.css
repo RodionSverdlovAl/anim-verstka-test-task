@@ -21,9 +21,9 @@ body {
     position: relative;
 }
 .hole {
-    position: relative;
-    top: 0vh;
-    left: -30vw;
+    position: fixed;
+    top: 25vh;
+    left: 10vw;
     width: 300px;
     height: 300px;
     box-shadow: 0 0 0 100vw rgba(255, 255, 255, 0.8);
@@ -32,7 +32,7 @@ body {
 }
 .hole._active{
     transform: translate(150%, 0px);
-    left: 30vw;
+    left: 70vw;
     transition: all 1.8s ease 0s;
 }
 button{
@@ -46,6 +46,7 @@ button{
     background: teal;
     color:white;
     font-size: 24px;
+    z-index: 21;
 }
 
 @keyframes spin {
@@ -54,12 +55,19 @@ button{
 }
 
 section{
+   
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+}
+.scroll_board{
+    z-index: 20;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 img {
     position: absolute;
@@ -74,6 +82,7 @@ img {
     position: absolute;
     background: white;
     right: -100vw;
+    z-index: 22;
 }
 .white-board._active{
     right: 0;
