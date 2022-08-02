@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="newpage.css">
+  <title>new page</title>
+</head>
+<body onload="loadPage()">
+
+  <div class="container">
+    <h1 id="h1" >New Page</h1>
+    <p id="peragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, hic.</p>
+    <div id="content" class="content">
+      <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem ratione unde quae.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, rem.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ex pariatur?</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const loadPage = () =>{
+      document.getElementById('h1').classList.add('_active')
+      document.getElementById('peragraf').classList.add('_active')
+      document.getElementById('content').classList.add('_active')
+    }
+  </script>
+    
+</body>
+</html>
